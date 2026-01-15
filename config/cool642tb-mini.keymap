@@ -56,10 +56,10 @@
 
         layer1 {
             bindings = <
-&kp JP_EXLM   &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC                         &kp JP_LPRN  &kp JP_RPRN  &kp JP_LT    &kp JP_GT    &kp JP_TILD
-&kp JP_AMPR   &kp JP_QUOT  &kp JP_MINS  &kp JP_EQL   &kp JP_UNDS  &trans      &trans     &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_PIPE
-&kp JP_CARET  &kp JP_GRV   &kp JP_PLUS  &kp JP_ASTR  &kp JP_QUES  &trans      &trans     &kp JP_LBKT  &kp JP_RBKT  &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT
-&kp LEFT_SHIFT   &trans    &trans       &trans       &trans       &trans      &trans     &trans                                              &kp LEFT_ALT
+&kp JP_EXLM         &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC                      &kp JP_LPRN  &kp JP_RPRN  &kp JP_LT    &kp JP_GT    &kp JP_TILD
+&kp JP_AMPR         &kp JP_QUOT  &kp JP_MINS  &kp JP_EQL   &kp JP_UNDS  &trans      &trans  &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_PIPE
+&kp JP_CARET        &kp JP_GRV   &kp JP_PLUS  &kp JP_ASTR  &kp JP_QUES  &trans      &trans  &kp JP_LBKT  &kp JP_RBKT  &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT
+&kp LC(LEFT_SHIFT)  &trans       &trans       &trans       &trans       &trans      &trans  &trans                                              &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PAGE_UP>;
@@ -67,19 +67,19 @@
 
         layer2 {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
-&none           &kp F2        &none         &none         &kp F5  &kp LS(LC(Y))      &kp LC(C)  &none         &kp F7  &kp F8  &none   &kp F12
-&none           &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &none   &none   &none   &none
-&kp LEFT_SHIFT  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                &kp LEFT_ALT
+&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
+&none               &kp F2        &none         &none         &kp F5  &kp LS(LC(Y))      &kp LC(C)  &none         &kp F7  &kp F8  &none   &kp F12
+&none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &none   &none   &none   &none
+&kp LC(LEFT_SHIFT)  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                &kp LEFT_ALT
             >;
         };
 
         layer3 {
             bindings = <
-&kp ESCAPE      &none        &kp PAGE_UP    &none    &none                             &none     &kp HOME        &kp UP_ARROW    &kp LS(LC(HOME))  &kp BACKSPACE
-&kp DELETE      &kp LC(TAB)  &none          &kp TAB  &none   &kp LC(Y)      &kp LC(C)  &mkp MB4  &kp LEFT_ARROW  &kp LEFT_ALT    &kp RIGHT_ARROW   &mkp MB5
-&kp INSERT      &none        &kp PAGE_DOWN  &none    &none   &kp LC(Z)      &kp LC(V)  &none     &kp END         &kp DOWN_ARROW  &kp LS(LC(END))   &trans
-&kp LEFT_SHIFT  &trans       &trans         &trans   &trans  &trans         &trans     &trans                                                      &kp LEFT_ALT
+&kp ESCAPE          &none            &kp PAGE_UP    &none    &none                             &none     &kp HOME        &kp UP_ARROW    &kp LS(LC(HOME))  &kp BACKSPACE
+&kp DELETE          &kp LC(LS(TAB))  &none          &kp TAB  &none   &kp LC(Y)      &kp LC(C)  &mkp MB4  &kp LEFT_ARROW  &kp LEFT_ALT    &kp RIGHT_ARROW   &mkp MB5
+&kp INSERT          &none            &kp PAGE_DOWN  &none    &none   &kp LC(Z)      &kp LC(V)  &none     &kp END         &kp DOWN_ARROW  &kp LS(LC(END))   &trans
+&kp LC(LEFT_SHIFT)  &trans           &trans         &trans   &trans  &trans         &trans     &trans                                                      &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
