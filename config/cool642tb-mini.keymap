@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include "locale/keys_ja.h"
 
 #define MOUSE 4
 #define SCROLL 5
@@ -46,7 +47,7 @@
             bindings = <
 &kp Q               &kp W         &kp E         &kp R             &kp T                                                &kp Y                       &kp U  &kp I      &kp O    &kp P
 &kp A               &kp S         &kp D         &kp F             &kp G        &kp LA(BACKSPACE)      &kp LG(LS(S))    &kp H                       &kp J  &kp K      &kp L    &kp MINUS
-&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2         &kp N                       &kp M  &kp COMMA  &kp DOT  &kp AT_SIGN
+&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2         &kp N                       &kp M  &kp COMMA  &kp DOT  &kp JP_AT
 &lt 5 LEFT_CONTROL  &lt 6 ESCAPE  &kp LEFT_GUI  &lt 3 LANGUAGE_2  &lt 2 LANG1  &lt 1 SPACE            &mt RSHFT ENTER  &mt LEFT_CONTROL BACKSPACE                             &mt LEFT_CONTROL CAPSLOCK
             >;
 
@@ -55,10 +56,10 @@
 
         layer1 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR    &kp PERCENT                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN      &kp TILDE
-&kp AMPERSAND    &kp SQT            &kp MINUS  &kp EQUAL     &kp UNDERSCORE  &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp COLON             &kp PIPE
-&kp CARET        &kp GRAVE          &kp PLUS   &kp ASTERISK  &kp QUESTION    &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SLASH      &kp NON_US_BACKSLASH  &kp AT_SIGN
-&kp LEFT_SHIFT   &trans             &trans     &trans        &trans          &trans      &trans  &trans                                                                            &kp LEFT_ALT
+&kp JP_EXLM   &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC                         &kp JP_LPRN  &kp JP_RPRN  &kp JP_LT    &kp JP_GT    &kp JP_TILD
+&kp JP_AMPR   &kp JP_QUOT  &kp JP_MINS  &kp JP_EQL   &kp JP_UNDS  &trans      &trans     &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_PIPE
+&kp JP_CARET  &kp JP_GRV   &kp JP_PLUS  &kp JP_ASTR  &kp JP_QUES  &trans      &trans     &kp JP_LBKT  &kp JP_RBKT  &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT
+&kp LEFT_SHIFT   &trans    &trans       &trans       &trans       &trans      &trans     &trans                                              &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PAGE_UP>;
