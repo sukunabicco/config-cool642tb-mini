@@ -60,6 +60,8 @@ config/
 
 ## 参考
 
+- [cool642tb-mini 使い方ガイド](https://note.com/na__ka__no/n/n6d4a7c7ecf30)
+- [cool642tb-mini - BOOTH](https://nakanoo.booth.pm/items/7464429)
 - [ZMK Firmware](https://zmk.dev/)
 - [na-ka-no/zmk](https://github.com/na-ka-no/zmk) - PMW3610対応フォーク
 - [zmk-pmw3610-driver](https://github.com/na-ka-no/zmk-pmw3610-driver)
