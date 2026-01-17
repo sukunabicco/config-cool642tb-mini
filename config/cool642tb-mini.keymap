@@ -72,6 +72,8 @@
 &none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &none   &none   &none   &none
 &kp LC(LEFT_SHIFT)  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                &kp LEFT_ALT
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         layer3 {
@@ -82,7 +84,7 @@
 &kp LC(LEFT_SHIFT)  &trans           &trans         &trans       &trans  &trans         &trans     &trans                                                      &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
         };
 
         layer4 {
