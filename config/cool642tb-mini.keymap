@@ -77,8 +77,8 @@
         layer3 {
             bindings = <
 &kp ESCAPE          &kp LC(LS(TAB))  &kp PAGE_UP    &kp LC(TAB)  &none                             &none     &kp HOME        &kp UP_ARROW    &kp LS(LC(HOME))  &kp BACKSPACE
-&kp DELETE          &kp LS(TAB)      &none          &kp TAB      &none   &kp LC(Y)      &kp LC(C)  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &mkp MB5
-&kp INSERT          &none            &kp PAGE_DOWN  &none        &none   &kp LC(Z)      &kp LC(V)  &none     &kp END         &kp LEFT_ALT    &kp LS(LC(END))   &trans
+&kp DELETE          &kp LS(TAB)      &kp PAGE_DOWN  &kp TAB      &none   &kp LC(Y)      &kp LC(C)  &mkp MB4  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &mkp MB5
+&kp INSERT          &none            &kp LALT       &none        &none   &kp LC(Z)      &kp LC(V)  &none     &kp END         &kp LEFT_ALT    &kp LS(LC(END))   &trans
 &kp LC(LEFT_SHIFT)  &trans           &trans         &trans       &trans  &trans         &trans     &trans                                                      &kp LEFT_ALT
             >;
 
