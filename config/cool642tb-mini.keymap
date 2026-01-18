@@ -56,10 +56,10 @@
 
         layer1 {
             bindings = <
-&kp JP_EXLM         &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC                      &kp JP_LPRN  &kp JP_RPRN  &kp JP_LT    &kp JP_GT    &kp JP_TILD
-&kp JP_AMPR         &kp JP_QUOT  &kp JP_MINS  &kp JP_EQL   &kp JP_UNDS  &trans      &trans  &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_PIPE
-&kp JP_CARET        &kp JP_GRV   &kp JP_PLUS  &kp JP_ASTR  &kp JP_QUES  &trans      &trans  &kp JP_LBKT  &kp JP_RBKT  &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT
-&kp LC(LEFT_SHIFT)  &trans       &trans       &trans       &trans       &trans      &trans  &trans                                              &kp LEFT_ALT
+&kp JP_EXLM         &kp JP_DQUO  &kp JP_HASH  &kp JP_DLR   &kp JP_PERC                            &kp JP_LPRN  &kp JP_RPRN  &kp JP_LT    &kp JP_GT    &kp JP_TILD
+&kp JP_AMPR         &kp JP_QUOT  &kp JP_MINS  &kp JP_EQL   &kp JP_UNDS  &kp LC(Y)      &kp LC(C)  &kp JP_LBRC  &kp JP_RBRC  &kp JP_SCLN  &kp JP_COLN  &kp JP_PIPE
+&kp JP_CARET        &kp JP_GRV   &kp JP_PLUS  &kp JP_ASTR  &kp JP_QUES  &kp LC(Z)      &kp LC(V)  &kp JP_LBKT  &kp JP_RBKT  &kp JP_SLSH  &kp JP_BSLS  &kp JP_AT
+&kp LC(LEFT_SHIFT)  &trans       &trans       &trans       &trans       &trans         &trans     &trans                                              &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PAGE_UP>;
