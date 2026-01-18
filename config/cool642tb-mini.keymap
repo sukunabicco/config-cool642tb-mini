@@ -47,7 +47,7 @@
             bindings = <
 &kp Q               &kp W         &kp E         &kp R             &kp T                                                &kp Y                       &kp U  &kp I      &kp O    &kp P
 &kp A               &kp S         &kp D         &kp F             &kp G        &kp LA(BACKSPACE)      &kp LG(LS(S))    &kp H                       &kp J  &kp K      &kp L    &kp MINUS
-&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2         &kp N                       &kp M  &kp COMMA  &kp DOT  &kp JP_AT
+&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2         &kp N                       &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT AT_SIGN
 &lt 5 LEFT_CONTROL  &lt 6 ESCAPE  &kp LEFT_GUI  &lt 3 LANGUAGE_2  &lt 2 LANG1  &lt 1 SPACE            &mt RSHFT ENTER  &mt LEFT_CONTROL BACKSPACE                             &mt LEFT_CONTROL CAPSLOCK
             >;
 
