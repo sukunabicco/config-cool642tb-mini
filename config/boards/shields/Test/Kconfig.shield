@@ -3,3 +3,6 @@ config SHIELD_ROBA_R
 
 config SHIELD_ROBA_L
     def_bool $(shields_list_contains,cool642tb-mini_L)
+
+config SHIELD_ROBA_DONGLE
+    def_bool $(shields_list_contains,cool642tb-mini_dongle)

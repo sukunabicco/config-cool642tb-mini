@@ -1,0 +1,36 @@
+#include "cool642tb-mini.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
+    trackball_split: trackball_split {
+        compatible = "zmk,input-split";
+        reg = <0>;
+    };
+
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>;
+    };
+};
+
+&kscan0 {
+    status = "disabled";
+};
+
+&left_encoder {
+    status = "disabled";
+};
+
+&right_encoder {
+    status = "disabled";
+};
