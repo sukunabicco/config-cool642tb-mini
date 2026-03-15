@@ -15,10 +15,10 @@
 };
 
 / {
-    trackball_split: trackball_split@0 {
-        compatible = "zmk,input-split";
+    trackball_listener {
+        compatible = "zmk,input-listener";
         device = <&trackball>;
-        reg = <0 1>;
+
     };
 };
 

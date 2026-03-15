@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware  
     - name: na-ka-no
       url-base: https://github.com/na-ka-no
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
+    - name: t-ogura
+      url-base: https://github.com/t-ogura
   
   projects:  
     - name: zmk
@@ -16,8 +16,9 @@ manifest:
       remote: na-ka-no
       revision: main  
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: main
+      remote: t-ogura
+      revision: v1.0.0
+      path: modules/prospector-zmk-module
   
   self:  
     path: config
