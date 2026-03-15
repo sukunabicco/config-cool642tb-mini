@@ -18,7 +18,7 @@
     trackball_split: trackball_split {
         compatible = "zmk,input-split";
         device = <&trackball>;
-        reg = <0 0>;
+        reg = <0 1>;
     };
 };
 
