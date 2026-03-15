@@ -27,6 +27,10 @@
     status = "disabled";
 };
 
+&roba_physical_layout {
+    kscan = <&mock_kscan>;
+};
+
 &left_encoder {
     status = "disabled";
 };
