@@ -22,16 +22,16 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* 180-degree rotation (swap + invert) + auto-activate MOUSE layer (4) with 800ms timeout */
+        /* 180-degree rotation (swap + Y invert) + auto-activate MOUSE layer (4) with 800ms timeout */
         input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_temp_layer 4 800>;
 
         /* SCROLL layer (5): convert XY to scroll with X inversion */
         scroll_layer {
             layers = <5>;
             input-processors =
-                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
                 <&zip_scroll_scaler 1 8>;
