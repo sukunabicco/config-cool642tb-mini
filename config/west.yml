@@ -1,24 +1,24 @@
-manifest:  
-  remotes:  
-    - name: zmkfirmware  
-      url-base: https://github.com/zmkfirmware  
-    - name: na-ka-no
-      url-base: https://github.com/na-ka-no
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: inorichi
+      url-base: https://github.com/inorichi
     - name: t-ogura
       url-base: https://github.com/t-ogura
-  
-  projects:  
+
+  projects:
     - name: zmk
-      remote: na-ka-no
-      revision: for-cool642tb_mini
-      import: app/west.yml  
-    - name: zmk-pmw3610-driver  
-      remote: na-ka-no
-      revision: main  
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: inorichi
+      revision: main
     - name: prospector-zmk-module
       remote: t-ogura
-      revision: v2.0.0
+      revision: v2.1.0
       path: modules/prospector-zmk-module
-  
-  self:  
+
+  self:
     path: config
