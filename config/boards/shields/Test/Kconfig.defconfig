@@ -1,7 +1,7 @@
-if SHIELD_ROBA_R
+if SHIELD_ROBA_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "cool642tb-mini_R"
+    default "cool642tb-mini"
 
 config ZMK_SPLIT
     default y
@@ -9,15 +9,21 @@ config ZMK_SPLIT
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
 endif
 
-if SHIELD_ROBA_L
-
-config ZMK_KEYBOARD_NAME
-    default "cool642tb-mini_L"
+if SHIELD_ROBA_R
 
 config ZMK_SPLIT
     default y
 
 endif
 
+if SHIELD_ROBA_L
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -1,0 +1,54 @@
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
+#include "cool642tb-mini.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+
+    /* Receive trackball input from R peripheral */
+    input_split_0: input_split_0@0 {
+        compatible = "zmk,input-split";
+        status = "okay";
+        reg = <0 1>;
+    };
+
+    input_split_listener: input_split_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&input_split_0>;
+
+        /* 180-degree rotation + auto-activate MOUSE layer (4) with 800ms timeout */
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_temp_layer 4 800>;
+
+        /* SCROLL layer (5): convert XY to scroll */
+        scroll_layer {
+            layers = <5>;
+            input-processors =
+                <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_scroll_scaler 1 8>;
+        };
+    };
+};
+
+/* Override physical layout kscan to mock */
+&roba_physical_layout {
+    kscan = <&mock_kscan>;
+};
+
+/* Disable hardware that doesn't exist on dongle */
+&kscan0 {
+    status = "disabled";
+};
