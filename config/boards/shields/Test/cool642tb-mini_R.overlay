@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/input_transform.h>
-#include <input/input-event-codes.h>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 #include "cool642tb-mini.dtsi"
 
 &default_transform {
