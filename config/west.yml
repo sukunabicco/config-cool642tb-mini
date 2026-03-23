@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: carrefinho
-      url-base: https://github.com/carrefinho
+    - name: t-ogura
+      url-base: https://github.com/t-ogura
 
   projects:
     - name: zmk
@@ -11,8 +11,8 @@ manifest:
       revision: main
       import: app/west.yml
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: t-ogura
+      revision: v2.1.0
 
   self:
     path: config
