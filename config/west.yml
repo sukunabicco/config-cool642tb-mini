@@ -12,7 +12,7 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module
       remote: t-ogura
-      revision: v2.1.0
+      revision: v2.2b
 
   self:
     path: config
