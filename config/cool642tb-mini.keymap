@@ -29,6 +29,24 @@
         };
     };
 
+    macros {
+        m_kakko: m_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp JP_LBKT>, <&kp JP_RBKT>, <&kp LEFT>;
+        };
+
+        m_paren: m_paren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp JP_LPRN>, <&kp JP_RPRN>, <&kp LEFT>;
+        };
+    };
+
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
