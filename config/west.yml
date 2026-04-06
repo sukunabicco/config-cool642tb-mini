@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: cormoran
       url-base: https://github.com/cormoran
+    - name: badjeff
+      url-base: https://github.com/badjeff
 
   projects:
     - name: zmk
@@ -32,6 +34,11 @@ manifest:
     - name: zmk-behavior-runtime-sensor-rotate
       remote: cormoran
       revision: main
+
+    # PMW3610 trackball driver (not included in cormoran fork)
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: zmk-0.3
 
   self:
     path: config
