@@ -26,7 +26,8 @@
 
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_temp_layer 4 800>;
+            <&zip_temp_layer 4 800>,
+            <&mouse_runtime_input_processor>;
 
         /* SCROLL layer (5): convert XY to scroll */
         scroll_layer {
@@ -35,7 +36,8 @@
                 <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-                <&zip_scroll_scaler 1 8>;
+                <&zip_scroll_scaler 1 8>,
+                <&scroll_runtime_input_processor>;
         };
     };
 };
