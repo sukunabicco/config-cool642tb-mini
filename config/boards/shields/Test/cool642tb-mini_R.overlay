@@ -25,8 +25,8 @@
         device = <&trackball>;
 
         input-processors =
-            <&zip_temp_layer 4 800>,
-            <&mouse_runtime_input_processor>;
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_temp_layer 4 800>;
 
         /* SCROLL layer (5): convert XY to scroll */
         scroll_layer {
@@ -78,7 +78,5 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         cpi = <800>;
-        swap-xy;
-        invert-y;
     };
 };
