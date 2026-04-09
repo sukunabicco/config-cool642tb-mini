@@ -32,6 +32,24 @@
         };
     };
 
+    macros {
+        m_kakko: m_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp JP_LBKT>, <&kp JP_RBKT>, <&kp LEFT>;
+        };
+
+        m_paren: m_paren {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&kp JP_LPRN>, <&kp JP_RPRN>, <&kp LEFT>;
+        };
+    };
+
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
@@ -72,7 +90,7 @@
             bindings = <
 &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
 &none               &kp F2        &none         &none         &kp F5  &kp LS(LC(Y))      &kp LC(C)  &none         &kp F7  &kp F8  &none   &kp F12
-&none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &none   &none   &none   &none
+&none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &m_kakko  &m_paren   &none   &none
 &kp LC(LEFT_SHIFT)  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                &kp LEFT_ALT
             >;
 
