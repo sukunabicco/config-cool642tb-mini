@@ -4,7 +4,7 @@ include:
 #   shield: cool642tb-mini_dongle prospector_adapter
 #   snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
-   shield: cool642tb-mini_R
+   shield: cool642tb-mini_R prospector_adapter
    snippet: studio-rpc-usb-uart
  - board: seeeduino_xiao_ble
    shield: cool642tb-mini_L
