@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: carrefinho
       url-base: https://github.com/carrefinho
+    - name: t-ogura
+      url-base: https://github.com/t-ogura
     - name: cormoran
       url-base: https://github.com/cormoran
     - name: badjeff
@@ -15,8 +17,8 @@ manifest:
       revision: v0.3-branch+dya
       import: app/west.yml
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: t-ogura
+      revision: v2.0.0
 
     # DYA Studio modules
     - name: zmk-module-ble-management
