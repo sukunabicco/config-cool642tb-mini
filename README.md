@@ -58,6 +58,27 @@ config/
 2. マウントされたドライブに`.uf2`ファイルをコピー
 3. 自動的に再起動してファームウェアが適用される
 
+## DYA Studio での接続
+
+ブラウザ上でキーマップやトラックボール感度を編集できる [DYA Studio](https://studio.dya.cormoran.works/) に対応しています。
+
+### 接続手順
+
+1. **右手側（central）** を USB ケーブルで PC に直結する
+2. Chrome / Edge / Arc など [Web Serial API](https://developer.mozilla.org/docs/Web/API/Web_Serial_API) 対応ブラウザで <https://studio.dya.cormoran.works/> を開く（Firefox / Safari は非対応）
+3. 「接続」→ シリアルポート一覧から右手側を選択
+4. `&studio_unlock` キーを押してロック解除（下記参照）
+5. キーマップ編集 / トラックボール感度調整 / バッテリー履歴確認 → 保存で右手側に書き込み
+
+### unlock キーの位置
+
+`&studio_unlock` は **layer6 の左手最上段・左端**（layer0 で `Q` がある物理位置）に配置されています。
+
+操作手順:
+
+1. layer0 で **左手親指クラスタ左から 2 番目のキー（`lt 6 ESCAPE`）を長押し** → layer6 に入る
+2. その状態で **左手最上段の左端キー** を押す → ロック解除
+
 ## 参考
 
 - [cool642tb-mini 使い方ガイド](https://note.com/na__ka__no/n/n6d4a7c7ecf30)
