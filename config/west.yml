@@ -17,9 +17,6 @@ manifest:
       revision: v2.2b
 
     # DYA Studio modules
-    - name: zmk-module-ble-management
-      remote: cormoran
-      revision: main
     - name: zmk-module-battery-history
       remote: cormoran
       revision: main
