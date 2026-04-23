@@ -11,7 +11,7 @@
         io-channels = <&adc 7>;
         output-ohms = <510000>;
         full-ohms = <(1000000 + 510000)>;
-        power-gpios = <&gpio0 14 GPIO_ACTIVE_LOW>;
+        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
         mv-to-pct-thresholds = <2940 3360>;
     };
 };
