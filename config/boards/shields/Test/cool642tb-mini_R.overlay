@@ -61,25 +61,6 @@
 
 &xiao_serial { status = "disabled"; };
 
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 7>;
-        output-ohms = <510000>;
-        full-ohms = <(1000000 + 510000)>;
-        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-        mv-to-pct-thresholds = <2940 3360>;
-    };
-};
-
-&adc {
-    status = "okay";
-};
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
