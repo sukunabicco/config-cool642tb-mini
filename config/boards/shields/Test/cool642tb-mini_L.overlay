@@ -1,23 +1,4 @@
-#include <zephyr/dt-bindings/gpio/gpio.h>
 #include "cool642tb-mini.dtsi"
-
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 7>;
-        output-ohms = <510000>;
-        full-ohms = <(1000000 + 510000)>;
-        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-    };
-};
-
-&adc {
-    status = "okay";
-};
 
 &kscan0 {
         col-gpios

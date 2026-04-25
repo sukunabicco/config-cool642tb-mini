@@ -33,7 +33,7 @@
             layers = <5>;
             input-processors =
                 <&zip_xy_to_scroll_mapper>,
-                <&zip_scroll_scaler 3 1>;
+                <&zip_scroll_scaler 1 1>;
         };
     };
 };
@@ -58,24 +58,6 @@
 };
 
 &xiao_serial { status = "disabled"; };
-
-/ {
-    chosen {
-        zmk,battery = &vbatt;
-    };
-
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 7>;
-        output-ohms = <510000>;
-        full-ohms = <(1000000 + 510000)>;
-        power-gpios = <&gpio0 14 (GPIO_OPEN_DRAIN | GPIO_ACTIVE_LOW)>;
-    };
-};
-
-&adc {
-    status = "okay";
-};
 
 &spi0 {
     status = "okay";
