@@ -18,6 +18,18 @@
 };
 
 / {
+    /* Override board-default vbatt (BAT+ pad) with internal VDDH ADC.
+     * If VDDH reads non-zero, BAT+ pad path is dead; if also 0, XIAO
+     * itself is not seeing the battery rail. */
+    chosen { zmk,battery = &vddh; };
+
+    vddh: vddh {
+        compatible = "zmk,battery-nrf-vddh";
+        status = "okay";
+    };
+};
+
+/ {
     /* Process trackball input locally (scanner mode - R is central) */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";

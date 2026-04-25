@@ -1,5 +1,15 @@
 #include "cool642tb-mini.dtsi"
 
+/ {
+    /* See R.overlay: override BAT+ vbatt with VDDH for diagnostic. */
+    chosen { zmk,battery = &vddh; };
+
+    vddh: vddh {
+        compatible = "zmk,battery-nrf-vddh";
+        status = "okay";
+    };
+};
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
