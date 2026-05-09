@@ -41,6 +41,12 @@
             key-positions = <18 19>;
             layers = <0>;
         };
+
+        printscreen {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -58,16 +64,6 @@
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&kp JP_LPRN>, <&kp JP_RPRN>, <&kp LEFT>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
-        printscreen {
-            bindings = <&kp LG(LS(S))>;
-            key-positions = <9 8>;
         };
     };
 
