@@ -47,6 +47,11 @@
             key-positions = <8 9>;
             layers = <0>;
         };
+
+        win+h {
+            bindings = <&kp LG(H)>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
@@ -55,7 +60,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&kp JP_LBKT>, <&kp JP_RBKT>, <&kp LEFT>;
+            bindings = <&kp JP_LBKT &kp JP_RBKT &kp LEFT>;
         };
 
         m_paren: m_paren {
@@ -63,7 +68,7 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings = <&kp JP_LPRN>, <&kp JP_RPRN>, <&kp LEFT>;
+            bindings = <&kp JP_LPRN &kp JP_RPRN &kp LEFT>;
         };
     };
 
@@ -83,10 +88,10 @@
 
         layer0 {
             bindings = <
-&kp Q               &kp W         &kp E         &kp R             &kp T                                                  &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A               &kp S         &kp D         &kp F             &kp G        &kp LA(BACKSPACE)      &kp RA(BACKSPACE)  &kp H      &kp J  &kp K      &kp L    &kp MINUS
-&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2           &kp N      &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT JP_AT
-&lt 5 LEFT_CONTROL  &lt 6 ESCAPE  &kp LEFT_WIN  &lt 3 LANGUAGE_2  &lt 2 LANG1  &lt 1 SPACE            &mt LSHIFT ENTER   &kp BACKSPACE                         &kp LEFT_CONTROL
+&kp Q               &kp W         &kp E         &kp R             &kp T                                                  &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A               &kp S         &kp D         &kp F             &kp G        &kp LA(BACKSPACE)      &kp RA(BACKSPACE)  &kp H          &kp J  &kp K      &kp L    &kp MINUS
+&kp Z               &kp X         &kp C         &kp V             &kp B        &mkp MB1               &mkp MB2           &kp N          &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT JP_AT
+&lt 5 LEFT_CONTROL  &lt 6 ESCAPE  &kp LEFT_WIN  &lt 3 LANGUAGE_2  &lt 2 LANG1  &lt 1 SPACE            &mt LSHIFT ENTER   &kp BACKSPACE                             &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -105,10 +110,10 @@
 
         layer2 {
             bindings = <
-&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
-&none               &kp F2        &none         &none         &kp F5  &kp LS(LC(Y))      &kp LC(C)  &none         &kp F7  &kp F8  &none   &kp F12
-&none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &m_kakko  &m_paren   &none   &none
-&kp LC(LEFT_SHIFT)  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                &kp LEFT_ALT
+&kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                                &kp NUMBER_6  &kp N7    &kp N8    &kp N9  &kp N0
+&none               &kp F2        &none         &none         &kp F5  &kp LS(LC(Y))      &kp LC(C)  &none         &kp F7    &kp F8    &none   &kp F12
+&none               &none         &none         &none         &none   &kp LC(Z)          &kp LC(V)  &none         &m_kakko  &m_paren  &none   &none
+&kp LC(LEFT_SHIFT)  &trans        &trans        &trans        &trans  &trans             &trans     &trans                                    &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
