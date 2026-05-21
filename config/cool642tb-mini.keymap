@@ -48,9 +48,14 @@
             layers = <0>;
         };
 
-        win+h {
-            bindings = <&kp LG(H)>;
+        ctrl+win {
+            bindings = <&kp LC(LG(H))>;
             key-positions = <20 21>;
+        };
+
+        ctrl+win+space {
+            bindings = <&kp LG(LC(SPACE))>;
+            key-positions = <33 32>;
         };
     };
 
