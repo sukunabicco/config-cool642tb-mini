@@ -1,11 +1,5 @@
 #include "cool642tb-mini.dtsi"
 
-/* Board vbatt uses default LiPo curve (3450-4200 mV). Override for
- * 4xAAA range so the divider driver reports non-zero % on this hardware. */
-&vbatt {
-    mv-to-pct-thresholds = <2940 3360>;
-};
-
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>

@@ -17,12 +17,6 @@
             ;
 };
 
-/* Board vbatt uses default LiPo curve (3450-4200 mV). Override for
- * 4xAAA range so the divider driver reports non-zero % on this hardware. */
-&vbatt {
-    mv-to-pct-thresholds = <2940 3360>;
-};
-
 / {
     /* Process trackball input locally (scanner mode - R is central) */
     trackball_listener: trackball_listener {
